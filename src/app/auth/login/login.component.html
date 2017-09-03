@@ -1,0 +1,31 @@
+<!-- <div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin" (submit)="autenticate();">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <div id="remember" class="checkbox">
+                <label>
+                <input type="checkbox" value="remember-me"> Lembrar-me
+            </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
+        </form>
+        <a href="#" class="forgot-password">
+          Esqueci a senha
+        </a>
+    </div>
+</div> -->
+
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" (submit)="autenticate();">
+            <input [(ngModel)]="usuario.nome" id="nome" name="nome"  type="text" placeholder="Usuário" />
+            <input [(ngModel)]="usuario.senha" id="senha" name="senha" type="password" placeholder="Senha" />
+            <button>Entrar</button>
+            <p class="message">Não tem conta? <a href="/register">Cadastrar-se</a></p>
+        </form>
+    </div>
+</div>
