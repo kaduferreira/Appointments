@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['../../shared/layouts/auth-layout/auth-layout.component.css'],
 })
 export class RegisterComponent implements OnInit {
 
